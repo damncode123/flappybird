@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:cadetblue; 
+    background-image: -webkit-linear-gradient(rgb(175,75,75), rgb(31,31,31),rgb(59,153,148)); /*it helps us to give more than one backgroung color in easy way */
+    min-height: 930px;/*this is the height in which  these color will get divided */
+}
+#game
+{
+    height:100vh;
+    /* width:400px; */
+    border: 1px solid black;
+    background: url(bg2.jpg);
+    background-size: cover;
+    margin: 1rem auto; /*used to make content at the center*/
+    overflow: hidden; /*it will restrict the bird to not to go out of the  box*/
+}
+#block
+{
+    width: 100px;
+    height:100vh;
+    background-color:#415a77;
+    position: relative;
+    left: 1800px; /*it will restrict block div for not going out of the image */
+    animation: block 6s linear infinite;
+}
+@keyframes block{
+    0%
+    {
+        left: 1800px;
+    }
+    100%
+    {
+        left:-100px
+    }
+}
+#hole
+{
+    height:200px;
+    width:100px;
+    background-color:#caf0f8;
+    position:relative;
+    left:1800px;
+    top:-600px;
+    animation: block 6s linear infinite;
+}
+#bird
+{
+    position:fixed;
+    top:100px;
+    height: 50px;
+    width: 50px;
+}
+#bird img{
+    height:100px;
+    width:100px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#result
+{   
+    height: 300px;
+    width: 500px;
+    background-color:#660708;
+    margin: 5rem;
+    border: 2px solid white;
+    border-radius:20px;
+    display: none;/*this used to hide the result section from the main page*/ 
+    text-align: center;
+}
+#mi
+{
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#btn
+{
+    width:120px;
+    height: 40px;
+    padding:.5rem 1rem;
+    border:none;
+    border-radius: 30px;
+    background-color: green;
+    color: whitesmoke;
+    font: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    cursor:pointer;
+}
+#text{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: seashell;
+}
