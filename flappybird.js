@@ -45,3 +45,42 @@ hole.addEventListener("animationiteration",RanHole)
             jumping = 0;
         },100)
     }
+// function hop()
+//     {
+//         jumping = 1;
+//         let birdtop = parseInt(window.getComputedStyle(bird).getPropertyValue("top"));
+//         if(birdtop > 6)
+//         {
+//             bird.style.top = (birdtop -60) + "px";
+//         }
+//         setTimeout(function()
+//         {
+//             jumping = 0;
+//         },100)
+//     }
+// function hop()
+//     {
+//         jumping = 1;
+//         let birdtop = parseInt(window.getComputedStyle(bird).getPropertyValue("top"));
+//         if(birdtop > 6)
+//         {
+//             bird.style.top = (birdtop -60) + "px";
+//         }
+//         setTimeout(function()
+//         {
+//             jumping = 0;
+//         },100)
+//     }
+// function hop()
+//     {
+//         jumping = 1;
+//         let birdtop = parseInt(window.getComputedStyle(bird).getPropertyValue("top"));
+//         if(birdtop > 6)
+//         {
+//             bird.style.top = (birdtop -60) + "px";
+//         }
+//         setTimeout(function()
+//         {
+//             jumping = 0;
+//         },100)
+//     }
